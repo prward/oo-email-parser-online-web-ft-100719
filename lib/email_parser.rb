@@ -6,7 +6,11 @@ class EmailAddressParser
   
   attr_accessor :address
   
-  def parse
+  @@all = []
+  
+  def parse(address)
+    @address = address
+    @@all << self
   end
 
 
